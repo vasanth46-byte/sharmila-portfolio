@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PROFILE SECTION -->
+    <section id="profile">
+      <canvas id="particles-bg"></canvas>
+      <div class="section__text" style="text-align: center; margin: 0 auto;">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sharmila Ragavan</h1>
+        <p class="section__text__p2">Data Analyst</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/resumesharmi.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sharmila-ragavan-b00940252'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Bachelors of Commerce (B.Com)<br />VIT University, Vellore<br />CGPA: 8.40</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Certifications icon" class="icon" />
+            <h3>Certifications</h3>
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; text-align: center;">
+              <p>Data Analyst Certification<br />SLA Institute (2026)</p>
+              <p>IBM – Data Analysis with Python (2026)</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Aspiring Data Analyst with a strong foundation in Python, SQL, Excel, and Power BI.
+            I have hands-on experience in data cleaning, transformation, and exploratory data analysis (EDA).
+            My expertise includes building interactive dashboards and performing KPI analysis to generate
+            actionable insights that support data-driven decision-making.
+          </p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- SKILLS SECTION -->
+<section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Skills</h1>
+
+  <div class="skills-grid">
+
+    <!-- Languages -->
+    <div class="details-container">
+      <h2 class="experience-sub-title">Languages</h2>
+      <p>
+        <strong>Python:</strong> Pandas, NumPy, Matplotlib, Seaborn <br>
+        <strong>SQL:</strong> Joins, Subqueries, Aggregates, CRUD, Stored Procedures
+      </p>
+    </div>
+
+    <!-- BI & Visualization -->
+    <div class="details-container">
+      <h2 class="experience-sub-title">BI & Visualization</h2>
+      <p>
+        Power BI | DAX (Measures, Calculated Columns, Time Intelligence) <br>
+        Power Query | Data Modeling | KPI Dashboards
+      </p>
+    </div>
+
+    <!-- Data Analysis -->
+    <div class="details-container">
+      <h2 class="experience-sub-title">Data Analysis</h2>
+      <p>
+        EDA | Data Cleaning & Transformation | Outlier Detection (IQR) <br>
+        Statistical Analysis | Reporting
+      </p>
+    </div>
+
+    <!-- MS Office -->
+    <div class="details-container">
+      <h2 class="experience-sub-title">MS Office</h2>
+      <p>
+        Excel (Pivot Tables, VLOOKUP, HLOOKUP, Data Validation, Conditional Formatting) <br>
+        PowerPoint | Word
+      </p>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="details-container">
+      <h2 class="experience-sub-title">Soft Skills</h2>
+      <p>
+        Analytical Thinking | Problem Solving | Attention to Detail | Communication
+      </p>
+    </div>
+
+  </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+
+  <div class="article-container">
+    <img src="./assets/business.jpeg" alt="E-Commerce Dashboard" class="project-img" />
+  </div>
+
+  <h2 class="experience-sub-title project-title">
+    E-Commerce Orders Analysis
+  </h2>
+
+  <p class="project-desc">
+    End-to-end analysis of e-commerce data using Python, SQL, and Power BI to uncover sales trends and customer behavior.
+  </p>
+
+  <p class="project-tech">
+    <strong>Tech:</strong> Python, SQL, Power BI, DAX
+  </p>
+
+  <p class="project-impact">
+    <strong>Impact:</strong> Built KPI dashboard tracking revenue, orders, and retention, enabling data-driven decisions.
+  </p>
+
+  <div class="project-btn-container">
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+      Github
+    </button>
+
+  </div>
+
+</div>
+          <div class="details-container color-container">
+
+  <div class="article-container">
+    <img src="./assets/startup.jpeg" alt="Startup Funding Dashboard" class="project-img" />
+  </div>
+
+  <h2 class="experience-sub-title project-title">
+    Startup Funding Analysis
+  </h2>
+
+  <p class="project-desc">
+    Analyzed startup funding data to identify investment patterns, industry trends, and growth insights using Power BI.
+  </p>
+
+  <p class="project-tech">
+    <strong>Tech:</strong> Power BI, DAX, Power Query
+  </p>
+
+  <p class="project-impact">
+    <strong>Impact:</strong> Identified top investors, funding distribution, and YoY growth trends through interactive dashboards.
+  </p>
+
+  <div class="project-btn-container">
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+      Github
+    </button>
+  </div>
+
+</div>
+          <div class="details-container color-container">
+
+  <div class="article-container">
+    <img src="./assets/dairy.jpeg" alt="Dairy Analytics Dashboard" class="project-img" />
+  </div>
+
+  <h2 class="experience-sub-title project-title">
+    Dairy Data Analytics
+  </h2>
+
+  <p class="project-desc">
+    Developed data pipeline and dashboards to monitor dairy business performance using SQL and Power BI.
+  </p>
+
+  <p class="project-tech">
+    <strong>Tech:</strong> SQL, Power BI, DAX
+  </p>
+
+  <p class="project-impact">
+    <strong>Impact:</strong> Automated reporting with time-intelligence KPIs (YTD, MTD, QTD), eliminating manual reporting efforts.
+  </p>
+
+  <div class="project-btn-container">
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+      Github
+    </button>
+  </div>
+
+</div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p>
+  <a href="mailto:sharmilaragavan4@gmail.com">
+    sharmilaragavan4@gmail.com
+  </a>
+</p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/sharmila-ragavan-b00940252">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 @Vasanth. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

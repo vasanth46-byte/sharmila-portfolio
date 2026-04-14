@@ -1,0 +1,239 @@
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* ---------- <=1400px ---------- */
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+
+  .about-containers {
+    flex-wrap: wrap;
+  }
+
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+/* ---------- <=1200px (Tablet) ---------- */
+@media screen and (max-width: 1200px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+  section {
+    margin: 0 5%;
+    overflow-x: hidden;
+  }
+
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+
+  .about-containers {
+    margin-top: 0;
+  }
+
+  /* ✅ SINGLE COLUMN FIX */
+  .about-containers,
+  .skills-grid,
+  .project-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .skills-grid .details-container {
+    width: 100% !important;
+    margin: 0 auto !important;
+    max-width: 400px !important;
+    box-sizing: border-box !important;
+  }
+
+  .skills-grid .details-container:last-child {
+    max-width: 400px !important;
+    margin: 0 auto !important;
+  }
+
+  .details-container {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* ---------- <=600px (Mobile) ---------- */
+@media screen and (max-width: 600px) {
+
+  section {
+    margin: 0 1rem;
+    padding-top: 6vh;
+  }
+
+  #profile {
+    height: auto;
+    margin-bottom: 0;
+    padding-top: 10vh;
+  }
+
+  /* Fix profile buttons cramping side by side */
+  .btn-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .btn-container .btn {
+    width: 100% !important;
+    max-width: 250px !important;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .about-containers,
+  .contact-info-upper-container {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .contact-info-container {
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+    word-break: break-word;
+    /* Prevents long emails from breaking mobile view */
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .text-container {
+    text-align: justify;
+    padding: 0 1rem;
+  }
+
+  /* ✅ MOBILE CARD IMPROVEMENTS */
+  .details-container {
+    padding: 1.2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .details-container img {
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  .details-container p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  /* ✅ CONTACT FIX */
+  #contact {
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .contact-info-upper-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+  }
+}
+
+/* ---------- GLOBAL FIX ---------- */
+.details-container .project-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
