@@ -280,9 +280,6 @@ body {
 }
 
 .about-containers {
-  display: flex;
-  flex-wrap: wrap;   /* ✅ THIS IS THE FIX */
-  justify-content: center; /* keeps rows centered */
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -293,16 +290,9 @@ body {
   flex-direction: column;
 }
 
-.about-containers {
-  display: flex;
-  flex-wrap: wrap;              /* ✅ allows next row */
-  justify-content: center;      /* ✅ centers last row */
-  gap: 2rem;
-}
-
+.about-containers,
 .about-details-container {
   display: flex;
-  flex-direction: column;
 }
 
 .about-pic {
@@ -316,7 +306,7 @@ body {
 }
 
 .details-container {
-  padding: 1rem;
+  padding: 1.5rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
@@ -345,7 +335,7 @@ body {
 .experience-sub-title {
   color: black;              /* Match Projects */
   font-weight: 700;          /* Make it bold like title */
-  font-size: 1.4rem;         /* Slightly strong presence */
+  font-size: 1.6rem;         /* Slightly strong presence */
   margin-bottom: 1rem;
 }
 
@@ -480,14 +470,14 @@ footer p {
 }
 
 .project-desc {
-  font-size: 0.85rem;
-  margin: 0.3rem 0.8rem;
+  font-size: 0.9rem;
+  margin: 0.5rem 1rem;
 }
 
 .project-tech,
 .project-impact {
-  font-size: 0.8rem;
-  margin: 0.2rem 0.8rem;
+  font-size: 0.85rem;
+  margin: 0.3rem 1rem;
 }
 
 /* Particle canvas */
@@ -581,6 +571,30 @@ h1, h2, h3 {
   text-align: center;
 }
 
-.details-container {
-  max-width: 280px;
+/* ===== PROJECT CARD HEIGHT FIX ONLY ===== */
+#projects .details-container {
+  padding: 1.2rem;
+}
+
+#projects .project-desc {
+  margin: 0.3rem 1rem;
+  font-size: 0.85rem;
+}
+
+#projects .project-tech,
+#projects .project-impact {
+  margin: 0.2rem 1rem;
+  font-size: 0.8rem;
+}
+
+#projects .project-title {
+  margin: 0.5rem;
+}
+
+#projects .project-img {
+  width: 70%;
+}
+
+#projects .project-btn-container {
+  margin-top: 0.5rem;
 }
